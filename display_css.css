@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins' ,sans-serif;
+    overflow: hidden;
+}
+
+.table{
+    width: 100%;
+}
+
+.table_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.table_header p{
+    color: black;
+}
+
+button{
+    outline:none;
+    border: none;
+    border-radius:6px;
+    cursor:pointer;
+    padding: 5px;
+    color: #dddddd;
+}
+
+td button:nth-child(1){
+    background-color: blue;
+}
+
+td button:nth-child(2){
+    background-color: red;
+}
+
+.add_new{
+    padding: 10px 20px;
+    color: white;
+    background-color: blue;
+}
+
+input{
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 6px;
+    color: blue;
+}
+
+::placeholder{
+    color: blue;
+}
+
+
+.table_section{
+    height: 400px;
+    overflow: auto;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    color: gray;
+    font-size: 13px;
+}
+
+th,td{
+    border-bottom: 1px solid; 
+    text-align: center;
+}
+
+tr:hover td{
+    color: blue;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
